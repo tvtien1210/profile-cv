@@ -1,475 +1,63 @@
-* {
-  margin: 0px;
-  font-family: sans-serif;
-}
-
-/* Chỉnh màu xanh dương cho icon */
-i {
-  color: #199cdb;
-}
 p {
-  line-height: 1.5;
-}
-.bg-grey {
-  background: #f7f7f7;
-}
-/* ------------------------------------------------------------------------------- */
-
-/* BANNER--- */
-
-/* Cài đặt class banner: là vị trí tương đối relative cho
- dev-info*/
-.banner {
-  /* color: #fff; */
-  position: relative;
-  text-align: center;
+  margin: 0;
 }
 
-/* Chỉnh độ rộng ảnh banner rộng theo kích thước màn hình */
-.banner-img {
-  width: 100%;
-  height: 55rem;
-  background-size: cover;
-  background-position: center;
+/* NAV-BAR */
+.nav-bar::before {
+  content: "";
+  display: block;
+  height: 80px;
 }
 
-/* Chỉnh thông tin dev-info đến vị trí giữa ảnh banner */
-.dev-info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
+/* ABOUT */
+.about::before {
+  content: "";
+  display: block;
+  height: 80px;
 }
-/* NAV-BAR --------------------------------------------------------*/
-
-/* Chỉnh item thanh điều hướng hiển thị theo FlexBox, 
-mục đích để căn chỉnh theo chiều ngang ra giữa dòng */
-#nav-bar .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-/* Chỉnh font chữ, màu chữ, padding, border cho nav-bar */
-#nav-bar .container a {
-  text-transform: uppercase;
-  color: black;
-  text-decoration: none;
-  padding: 20px 40px;
-  border: 1px solid #f7f7f7;
-}
-
-/* Căn chỉnh padding cho thẻ div (có chứa dev-name và dev-positon) nằm giữa navbar */
-#nav-bar .container div {
-  padding: 20px 80px;
-  font-size: 10px;
-}
-/* Căn chỉnh avatar */
-.avatar {
-  position: absolute;
-  top: -40px;
-  left: 42.2%;
-  border: 3px solid #f7f7f7;
+/* HOBBY */
+.ic-rounded {
+  background-color: aquamarine;
   border-radius: 50%;
-}
-/* ABOUT -------------------------------------------------------*/
-
-/* Container-about chứa thông tin Mục tiêu và Thông tin cá nhân,
-Chia Mục tiêu nghề nghiệp và thông tin cá nhân thành 2 cột */
-#about .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0;
-  width: 100%;
+  width: 50px;
+  height: 50px;
 }
 
-/* Chỉnh khối Mục tiêu nghề nghiệp sang lề bên phải cột 1 */
-#target {
-  padding: 40px 40px 40px 400px;
+.small {
+  font-size: x-small;
 }
 
-/* Chỉnh khoảng cách văn bản trong thẻ p thuộc id="about" */
-#target p {
-  line-height: 2;
-}
-
-/* Chỉnh khối Thông tin cá nhân sang lề bên trái cột 2 */
-#personal-info {
-  background-color: #e0e0e0;
-  padding: 40px 400px 40px 40px;
-}
-
-/* Chỉnh thẻ (h1) trong ABOUT có 
-Mục tiêu nghề nghiệp và thẻ Thông tin cá nhân có margin-bottom 30px */
-#about .section {
-  margin-bottom: 30px;
-}
-
-/* Chỉnh khoảng cách li  */
-.info li {
-  list-style: none;
-  line-height: 2;
-}
-.info a:link {
-  text-decoration: none;
-}
-
-/* Chỉnh khối #personal-info .info ul có margin-bottom 20px,
- để có "khoảng cách" hợp lý với thẻ chứa 
- icon-twitter icon-facebook icon-gplus icon-linkedin */
-.info {
-  padding: 0;
+/* LANGUAGE */
+.language .div-info span {
+  width: 50px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #199ce6;
+  display: inline-block;
+  margin-right: 5px;
   margin-bottom: 20px;
 }
 
-/* Chỉnh viết hoa "các" chữ đâu dòng trước dấu 2 chấm #personal-info */
-li span {
-  font-weight: bold;
-}
-
-/* JOB INFO ---------------------------------------------------*/
-/* Chỉnh sửa phần thông tin nghề nghiệp */
-
-#job-info .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-
-/* Chỉnh từng cell nhỏ trong grid của job-info */
-
-/* Chỉnh KHỐI EXPERIENCE thành 2 cột CSS Grid */
-.experience-main {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  align-items: center;
-  border: 1px solid #e0e0e0;
-  padding: 40px;
-}
-
-/* Chỉnh size cho "các" items i to hơn đều nhau, 
-và nằm trong Khối #job-info .container */
-#job-info .container i {
-  font-size: xxx-large;
-  color: #adadad;
-}
-/* Chỉnh "tất cả" các tựa đề lớn xuống phía dưới cell chứa nó */
-.container h1 {
-  align-self: end;
-}
-/* Chỉnh "tất cả" các icon lớn lên phía trên cell chứa nó */
-.container i {
-  align-self: start;
-}
-
-.div-info {
-  grid-column: 1/-1;
-  padding-left: 20px;
-}
-.experiences {
-  margin-top: 40px;
-  position: relative;
-}
-
-/* Tạo vòng tròn cho đề mục, vị trí tương đối sẽ 
-đặt cho thẻ experiences ngay trước nó */
-.experience-time::before {
-  content: "";
-  border: 4px solid #199cdb;
-  border-radius: 50%;
-  position: absolute;
-  left: -20px;
-  top: 7px;
-}
-.experience-time {
+/* SKILL */
+.skill .div-info span {
+  width: 50px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #199ce6;
+  display: inline-block;
+  margin-right: 5px;
   margin-bottom: 20px;
 }
 
-/* Chỉnh "các" thẻ Công ty và Vị trí thành chữ in đậm */
-.title {
-  font-weight: bold;
-}
-
-/* Chỉnh "các" thẻ thời gian thành chữ in nghiêng */
-.time {
-  font-style: italic;
-}
-/* Chỉnh style cho "các" thẻ (time "hiện tại") trong Khối #info .container*/
-.time span {
-  background-color: #199cdb;
-  color: #fff;
-  padding: 0px 15px;
-  border-radius: 7px;
-}
-
-/* Chỉnh KHỐI EDUCATION */
-.education-main {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  align-items: center;
-  border: 1px solid #e0e0e0;
-  padding: 40px;
-}
-.educations {
-  margin-top: 40px;
-  position: relative;
-}
-.education-time::before {
-  content: "";
-  border: 4px solid #199cdb;
-  border-radius: 50%;
-  position: absolute;
-  left: -20px;
-  top: 7px;
-}
-/* Chỉnh khối ACTIVITY */
-/* Chỉnh khối ACTIVITY xuống phía dưới cột 1 theo CSS Grid */
-.activity-main {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  align-items: center;
-  padding: 40px;
-  border: 1px solid #e0e0e0;
-
-  grid-column: 1;
-  grid-row: 2;
-}
-.activities {
-  margin-top: 40px;
-  position: relative;
-}
-.activity-time::before {
-  content: "";
-  border: 4px solid #199cdb;
-  border-radius: 50%;
-  position: absolute;
-  left: -20px;
-  top: 7px;
-}
-/* Chỉnh sửa khối HOBBY */
-.hobby-main {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  align-items: center;
-  padding: 40px;
-  border: 1px solid #e0e0e0;
-  position: relative;
-}
-/* Chỉnh tiêu đề lớn "Sở thích" lên phía trên  */
-.hobby-main h1,
-.skill-main h1,
-.language-main h1 {
-  align-self: start;
-  padding-top: 30px;
-}
-
-.hobby-content {
-  grid-column: 1/-1;
-  /* Chỉnh phần nội dung hobby-content sở thích lên phía trên*/
-  margin-top: -100px;
-  /* Dùng flex để căn cho 4 vòng tròn sở thích cách đều nhau */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Dùng flex để "căn chỉnh riêng" vị trí icon và border  */
-.hobby-content i {
-  font-size: large !important;
-  /* Chỉnh bán kính border */
-  width: 40px;
-  height: 40px;
-  /* Chỉnh icon nằm giữa border */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* Chỉnh màu cho thành phần */
-  color: #199cdb !important;
-  border: 2px solid #199cdb;
-
-  border-radius: 50%;
-
-  position: absolute;
-  top: 140px;
-}
-/*Chỉnh cho text "Công nghệ"" nằm phía dưới cân đối với icon  */
-.hobby-content .text-tech {
-  margin-left: -20px;
-}
-/*Chỉnh cho text "Âm nhạc"" nằm phía dưới cân đối với icon  */
-.hobby-content .text-music {
-  margin-left: -8px;
-}
-
-.language-main {
-  /* Chỉnh cho khối language lên phía trên cột 3 */
-  grid-column: 3;
-  grid-row: 1;
-  border: 1px solid #e0e0e0;
-  /* Chỉnh khối thành 2 cột dùng css grid */
-  padding: 40px;
-  display: grid;
-  grid-template-columns: 75% 25%;
-}
-
-.language-main span {
-  height: 2px;
-  width: 45px;
-  display: inline-block;
-  background-color: #199cdb;
-  margin-right: 10px;
-}
-
-.skill-main {
-  /* Chỉnh cho khối skill lên phía trên cột 2 */
-  grid-column: 2;
-  grid-row: 1;
-  border: 1px solid #e0e0e0;
-
-  /* Chỉnh khối thành 2 cột dùng css grid */
-  padding: 40px;
-  display: grid;
-  grid-template-columns: 75% 25%;
-}
-
-/* Tạo thang điểm 3 gạch ngang dài màu xanh */
-.skill-main span {
-  background-color: #199cdb;
-  height: 2px;
-  width: 45px;
-  display: inline-block;
-  margin-right: 10px;
-}
 /* CERTIFICATION */
-#certificate .container {
-  position: relative;
+.cer-border-y {
+  border-right: 1px solid #d6c08d;
 }
-.container-cer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* align-items: center;
-  justify-content: center; */
-  gap: 50px;
-}
-.container-cer h1 {
-  grid-column: 1/-1;
-}
-.container-cer .title {
-  text-transform: uppercase;
-}
-/* Tạo thanh ngang phân biệt giữa mỗi item trong layout */
-.container-cer::before {
+.cer-border-x {
   content: "";
+  height: 1px;
+  width: 100%;
   background-color: #d6c08d;
   position: absolute;
-  height: 1px;
-  left: 50px;
-  right: 50px;
-  top: 220px;
-}
-/*Căn chỉnh cell nội dung */
-.content-cer {
-  display: flex;
-  gap: 30px;
-}
-.content-cer-1 {
-  border-right: 1px solid #d6c08d;
-  margin-right: -30px;
-}
-
-/* PROJECT */
-
-.container-prj {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-}
-.container-prj h1 {
-  grid-column: 1/-1;
-}
-/* Viết in hoa tự đề CV cá nhân */
-.title-prj {
-  text-transform: uppercase;
-  padding: 20px;
-  border: 1px solid #adadad;
-}
-/* Căn chỉnh một chiều theo hàng ngang cho khối details-prj */
-.details-prj {
-  display: flex;
-  padding: 20px;
-  justify-content: space-between;
-  /* Tạo border cho khối details-project */
-  border: 1px solid #adadad;
-  border-top: none;
-  border-bottom: none;
-}
-/* Bỏ kế thừa chữ nghiêng italic từ class .time */
-#project span {
-  font-style: normal;
-}
-/* Tạo border cho table, dùng thêm thuộc tính collapse để chia các ô theo những border đơn */
-table {
-  border: 1px solid #adadad;
-  border-collapse: collapse;
-  height: 300px;
-}
-/* Tạo border-bottom cho td */
-td {
-  padding: 10px;
-  line-height: 1.5;
-  border-bottom: 1px solid #adadad;
-}
-/* Chỉnh chiều rộng đủ chứa văn bản, tránh bị xuống dòng */
-.title-tr {
-  width: 70px;
-}
-/* FOOTER */
-/* Chỉnh icon và văn bản trong container-footer */
-.container-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  gap: 30px;
-  padding-left: 0;
-}
-/* Căn chỉnh icon và văn bản nằm giữa cột và dòng theo khối a */
-.container-footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-footer i {
-  font-size: xx-large;
-}
-
-.container-footer a:link {
-  text-decoration: none;
-}
-.container-footer a:hover {
-  text-decoration: underline;
-}
-.container-footer a:visited {
-  color: #c58af9;
-}
-.container-footer a:active {
-  color: red;
-}
-/* ------------------------------------------------------------------------------------ */
-
-/* Định dạng mặc định khi tải về từ source */
-section > .container {
-  width: 1170px;
-  margin: auto;
-  display: block;
-
-  padding: 30px 50px;
-}
-
-/* Mặc định trong file tải về, chỉnh item nội dung ra giữa mỗi ô chứa thẻ nav */
-#nav-bar {
-  text-align: center;
+  top: 58%;
 }
