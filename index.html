@@ -45,8 +45,8 @@
 
     <!-- NAV-BAR NAV-BAR NAV-BAR NAV-BAR NAV-BAR NAV-BAR NAV-BAR NAV-BAR NAV-BAR NAV-BAR -->
     <section id="nav-bar" class="nav-bar">
-      <nav
-        class="container text-center justify-content-center my-5 d-flex position-relative g-3"
+      <div
+        class="container-fluid text-center justify-content-center my-5 d-flex position-relative g-3"
       >
         <button type="button" class="btn btn-light border" style="width: 200px">
           <a class="text-decoration-none text-dark" href="#about">
@@ -64,15 +64,15 @@
 
         <button
           type="button"
-          class="btn btn-light border mx-5"
+          class="btn btn-light border mx-5 avatar-button"
           style="width: 150px"
         >
           <a class="text-decoration-none" href=""> </a>
           <img
-            src="./images/avatar.jpg"
+            src="images/avatar.jpg"
             alt="This is avatar image"
             class="avatar position-absolute rounded-circle top-50 start-50 translate-middle"
-            width="18%"
+            width="15%"
           />
         </button>
 
@@ -89,7 +89,7 @@
             Dự án
           </a>
         </button>
-      </nav>
+      </div>
     </section>
 
     <!-- ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT -->
@@ -148,7 +148,9 @@
                     <h5 class="title">NTT Com Cheo Corp</h5>
                     <p class="time fs-5 fst-italic">
                       04/2022 -
-                      <span class="time btn btn-primary">Hiện tại</span>
+                      <span class="time btn btn-primary rounded-pill"
+                        >Hiện tại</span
+                      >
                     </p>
                   </div>
                   <div class="experience-content">
@@ -217,7 +219,9 @@
                     <h5 class="title">Câu lạc bộ Guitar Funabashi</h5>
                     <p class="time fs-5 fst-italic">
                       10/2022 -
-                      <span class="time btn btn-primary">Hiện tại</span>
+                      <span class="time btn btn-primary rounded-pill"
+                        >Hiện tại</span
+                      >
                     </p>
                   </div>
                   <div class="experience-content">
@@ -332,24 +336,24 @@
 
     <!-- CERTIFICATE CERTIFICATE CERTIFICATE CERTIFICATE CERTIFICATE CERTIFICATE CERTIFICATE CERTIFICATE CERTIFICATE CERTIFICATE -->
     <section id="certificate" class="certificate mt-5">
-      <div class="container position-relative">
+      <div class="container position-relative justify-content-center">
         <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
         <!-- Horizontal -->
         <div class="row">
           <!--  -->
-          <div class="col-6">
+          <div class="col-6 w-custom-100">
             <div
-              class="card mt-5 mb-3 border-top-0 border-bottom-0 border-start-0 cer-border-y rounded-0"
+              class="card h-100 mt-5 mb-3 border-top-0 border-bottom-0 border-start-0 cer-border-y rounded-0"
             >
               <div class="row g-0">
-                <div class="col-5">
+                <div class="col-5 w-custom-100">
                   <img
                     src="./images/Cert_DBI.png"
                     class="img-fluid rounded-start"
                     alt="..."
                   />
                 </div>
-                <div class="col-7">
+                <div class="col-7 w-custom-100">
                   <div class="card-body">
                     <h6 class="card-title text-uppercase">
                       Chứng chỉ lập trình web - Funix
@@ -369,17 +373,17 @@
             </div>
           </div>
 
-          <div class="col-6">
-            <div class="card mt-5 mb-3 border-0">
+          <div class="certificate-width col-6 w-custom-100">
+            <div class="card h-100 mt-5 mb-3 border-0">
               <div class="row g-0">
-                <div class="col-5">
+                <div class="col-5 w-custom-100">
                   <img
                     src="./images/Cert_DBI.png"
                     class="img-fluid rounded-start"
                     alt="..."
                   />
                 </div>
-                <div class="col-7">
+                <div class="col-7 w-custom-100">
                   <div class="card-body">
                     <h6 class="card-title text-uppercase">
                       Chứng chỉ lập trình Javascript - Funix
@@ -399,17 +403,17 @@
             </div>
           </div>
 
-          <div class="col-6">
-            <div class="card mt-5 mb-3 border-0">
+          <div class="certificate-width col-6 w-custom-100">
+            <div class="card h-100 mt-5 mb-3 border-0">
               <div class="row g-0">
-                <div class="col-5">
+                <div class="col-5 w-custom-100">
                   <img
                     src="./images/Cert_DBI.png"
                     class="img-fluid rounded-start"
                     alt="..."
                   />
                 </div>
-                <div class="col-7">
+                <div class="col-7 w-custom-100">
                   <div class="card-body">
                     <h6 class="card-title text-uppercase">
                       Chứng chỉ lập trình web-Funix
@@ -439,159 +443,134 @@
     <section id="project" class="project">
       <div class="container">
         <h1 class="section-title">Dự án</h1>
-        <div class="row mt-5 justify-content-center">
-          <!-- 1 -->
-          <div class="col-4">
-            <div class="project__cell">
-              <img
-                src="images/project_1.png"
-                alt="This is project_1 image"
-                width="100%"
-              />
-              <div class="prj-title text-uppercase border p-3">CV cá nhân</div>
-              <div
-                class="prj-details d-flex justify-content-between align-items-center border p-3"
-              >
-                <p class="time btn btn-primary rounded-pill">
-                  <span>2021</span>
-                </p>
-                <p><icon class="icon-user"></icon>FUNiX</p>
-                <p><icon class="icon-lamp"></icon>Developer</p>
-              </div>
 
-              <table>
-                <tbody class="content-table-cv">
-                  <div>
-                    <tr class="border">
-                      <td class="title-tr p-3" style="width: 150px">Mô tả</td>
-                      <td class="p-3">
-                        Trang Web CV cá nhân online. Gồm các thông tin cá nhân
-                        cũng như kỹ năng nghề nghiệp
-                      </td>
-                    </tr>
+        <div class="row mt-5">
+          <!-- 1 -->
+          <div class="col-4 w-custom-100 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="images/project_1.png"
+                  alt="This is project_1 image"
+                  width="100%"
+                />
+                <div class="prj-title text-uppercase border p-3">
+                  CV cá nhân
+                </div>
+                <div
+                  class="prj-details d-flex justify-content-between align-items-center border p-3"
+                >
+                  <p class="time btn btn-primary rounded-pill">
+                    <span>2021</span>
+                  </p>
+                  <p><icon class="icon-user"></icon>FUNiX</p>
+                  <p><icon class="icon-lamp"></icon>Developer</p>
+                </div>
+
+                <div class="d-flex border">
+                  <div class="p-3" style="min-width: 150px">Mô tả</div>
+                  <div class="p-3">
+                    Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp
                   </div>
-                  <div>
-                    <tr class="border">
-                      <td class="title-tr p-3">Nhiệm vụ</td>
-                      <td class="p-3">
-                        - Phát triển code - Review code - Tối ưu code - Xử lý
-                        lỗi
-                      </td>
-                    </tr>
+                </div>
+                <div class="d-flex border">
+                  <div class="p-3" style="min-width: 150px">Nhiệm vụ</div>
+                  <div class="p-3">
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
                   </div>
-                  <div>
-                    <tr class="border">
-                      <td class="title-tr p-3">Công nghệ</td>
-                      <td class="p-3">-HTML,CSS</td>
-                    </tr>
-                  </div>
-                </tbody>
-              </table>
+                </div>
+                <div class="d-flex border">
+                  <div class="p-3" style="min-width: 150px">Công nghệ</div>
+                  <div class="p-3">-HTML,CSS</div>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- 2 -->
-          <div class="col-4">
-            <div class="project__cell">
-              <img
-                src="images/project_2.png"
-                alt="This is project_2 image"
-                width="100%"
-              />
-              <div class="prj-title text-uppercase border p-3">
-                Trang web quản lý thú cưng
-              </div>
-              <div
-                class="prj-details d-flex justify-content-between align-items-center border p-3"
-              >
-                <p class="time btn btn-primary rounded-pill">
-                  <span>2021</span>
-                </p>
-                <p><icon class="icon-user"></icon>FUNiX</p>
-                <p><icon class="icon-lamp"></icon>Developer</p>
-              </div>
+          <div class="col-4 w-custom-100 mb-3">
+            <div class="card h-100">
+              <div class="card-body h-100">
+                <img
+                  src="images/project_2.png"
+                  alt="This is project_2 image"
+                  width="100%"
+                />
+                <div class="prj-title text-uppercase border p-3">
+                  Quản lý thú cưng
+                </div>
+                <div
+                  class="prj-details d-flex justify-content-between align-items-center border p-3"
+                >
+                  <p class="time btn btn-primary rounded-pill">
+                    <span>2021</span>
+                  </p>
+                  <p><icon class="icon-user"></icon>FUNiX</p>
+                  <p><icon class="icon-lamp"></icon>Developer</p>
+                </div>
 
-              <table>
-                <tbody class="content-table-cv">
-                  <div>
-                    <tr class="border">
-                      <td class="title-tr p-3" style="width: 150px">Mô tả</td>
-                      <td class="p-3">
-                        Ứng dụng giúp quản lý các thông tin của thú cưng như:
-                        Cân nặng, giống, tình trạng tiêm chủng,... Bao gồm các
-                        chức năng thêm/sửa/xoá.
-                      </td>
-                    </tr>
+                <div class="d-flex border">
+                  <div class="p-3" style="min-width: 150px">Mô tả</div>
+                  <div class="p-3">
+                    Ứng dụng giúp quản lý các thông tin của thú cưng như: Cân
+                    nặng, giống, tình trạng tiêm chủng, ... Bao gồm các chức
+                    năng thêm / sửa / xoá.
                   </div>
-                  <div>
-                    <tr class="border">
-                      <td class="title-tr p-3">Nhiệm vụ</td>
-                      <td class="p-3">
-                        - Phát triển code - Review code - Tối ưu code - Xử lý
-                        lỗi
-                      </td>
-                    </tr>
+                </div>
+                <div class="d-flex border">
+                  <div class="p-3" style="min-width: 150px">Nhiệm vụ</div>
+                  <div class="p-3">
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
                   </div>
-                  <div>
-                    <tr class="border">
-                      <td class="title-tr p-3">Công nghệ</td>
-                      <td class="p-3">HTML,CSS, Javascript</td>
-                    </tr>
-                  </div>
-                </tbody>
-              </table>
+                </div>
+                <div class="d-flex border">
+                  <div class="p-3" style="min-width: 150px">Công nghệ</div>
+                  <div class="p-3">-HTML,CSS, Javascript</div>
+                </div>
+              </div>
             </div>
           </div>
-
           <!-- 3 -->
-          <div class="col-4">
-            <div class="project__cell">
-              <img
-                src="images/project_3.png"
-                alt="This is project_3 image"
-                width="100%"
-              />
-              <div class="prj-title text-uppercase border p-3">
-                Trang xem tin tức
-              </div>
-              <div
-                class="prj-details d-flex justify-content-between align-items-center border p-3"
-              >
-                <p class="time btn btn-primary rounded-pill">
-                  <span>2021</span>
-                </p>
-                <p><icon class="icon-user"></icon>FUNiX</p>
-                <p><icon class="icon-lamp"></icon>Developer</p>
-              </div>
+          <div class="col-4 w-custom-100 mb-3">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="images/project_3.png"
+                  alt="This is project_3 image"
+                  width="100%"
+                />
+                <div class="prj-title text-uppercase border p-3">
+                  Trang web xem tin tức
+                </div>
+                <div
+                  class="prj-details d-flex justify-content-between align-items-center border p-3"
+                >
+                  <p class="time btn btn-primary rounded-pill">
+                    <span>2021</span>
+                  </p>
+                  <p><icon class="icon-user"></icon>FUNiX</p>
+                  <p><icon class="icon-lamp"></icon>Developer</p>
+                </div>
 
-              <table>
-                <tbody class="content-table-cv">
-                  <div>
-                    <tr class="border">
-                      <td class="title-tr p-3" style="width: 150px">Mô tả</td>
-                      <td class="p-3">
-                        Trang Web xem tin tức từ nhiều nguồn khác nhau, người
-                        dùng có thể tìm kiếm các tin tức dựa theo các từ khoá.
-                      </td>
-                    </tr>
+                <div class="d-flex border">
+                  <div class="p-3" style="min-width: 150px">Mô tả</div>
+                  <div class="p-3">
+                    Trang web xem tin tức từ nhiều nguồn khác nhau, người dùng
+                    có thể tìm kiếm các tin tức dựa theo các từ khoá
                   </div>
-                  <div>
-                    <tr class="border">
-                      <td class="title-tr p-3">Nhiệm vụ</td>
-                      <td class="p-3">
-                        - Phát triển code - Review code - Tối ưu code - Xử lý
-                        lỗi
-                      </td>
-                    </tr>
+                </div>
+                <div class="d-flex border">
+                  <div class="p-3" style="min-width: 150px">Nhiệm vụ</div>
+                  <div class="p-3">
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
                   </div>
-                  <div>
-                    <tr class="border">
-                      <td class="title-tr p-3">Công nghệ</td>
-                      <td class="p-3">-HTML,CSS,Javascript</td>
-                    </tr>
-                  </div>
-                </tbody>
-              </table>
+                </div>
+                <div class="d-flex border">
+                  <div class="p-3" style="min-width: 150px">Công nghệ</div>
+                  <div class="p-3">-HTML,CSS, Javascript</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
