@@ -1,5 +1,53 @@
 @media (max-width: 576px) {
-  body {
+  /* body {
     background-color: greenyellow;
+  } */
+  /* NAVBAR */
+  .nav-bar .container-fluid {
+    display: block !important;
+  }
+  .nav-bar .btn {
+    margin-bottom: 5px;
+  }
+  .nav-bar::before {
+    display: none;
+  }
+  .avatar-button {
+    display: none;
+  }
+  /* ABOUT */
+  .about::before {
+    display: none;
+  }
+  .about .target {
+    width: 100%;
+    text-align: start !important;
+  }
+  .about .personal-info {
+    width: 100%;
+  }
+  /* JOB INFO */
+  .job-info .container .row {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 25px;
+  }
+  /* CERTIFICATION */
+  .certificate .container .row {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 25px;
+  }
+  /* PROJECT */
+  .project .row {
+    display: block;
+  }
+  /* Utilities */
+  /* width custom */
+  .w-custom-100 {
+    width: 100%;
+  }
+  .h-custom-100 {
+    height: 100%;
   }
 }
