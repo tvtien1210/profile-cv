@@ -38,6 +38,15 @@
     grid-template-columns: auto;
     row-gap: 25px;
   }
+  .cer-border-x {
+    display: none;
+  }
+  .certificate .container .row .card {
+    /* margin-top: 20px; */
+    border-radius: 0px;
+    border-right: none;
+    border-bottom: 1px solid #d6c08d !important;
+  }
   /* PROJECT */
   .project .row {
     display: block;
