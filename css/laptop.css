@@ -44,12 +44,8 @@
   .cer-border-x {
     top: 60%;
   }
+  
   /* PROJECT */
-  .project::before {
-    content: "";
-    display: block;
-    height: 40px;
-  }
   .project .row {
     display: block;
   }
