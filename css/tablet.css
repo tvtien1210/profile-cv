@@ -1,7 +1,6 @@
 @media (max-width: 768px) {
-  /* body {
-    background-color: lightblue;
-  } */
+
+
   /* NAVBAR */
 
   .avatar-button {
@@ -13,6 +12,7 @@
   .avatar {
     display: none;
   }
+
   /* ABOUT */
   .about::before {
     display: none;
