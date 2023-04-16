@@ -4,15 +4,18 @@
   } */
   /* NAVBAR */
 
-  .avatar-button {
-    margin: 0 !important;
-  }
   .nav-bar::before {
     display: none;
   }
-  .avatar {
-    display: none;
+  .nav-bar::before {
+    content: "";
+    display: block;
+    height: 50px;
   }
+  .avatar {
+    width: 20%;
+  }
+
   /* ABOUT */
   .about::before {
     display: none;
