@@ -42,11 +42,7 @@
     top: 60%;
   }
   /* PROJECT */
-  .project::before {
-    content: "";
-    display: block;
-    height: 80px;
-  }
+
   .project .row {
     display: block;
   }
