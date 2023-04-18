@@ -18,9 +18,8 @@ p {
 
 /* JOB-INFO */
 .job-info .container .row .card {
-  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
 }
-
 /* HOBBY */
 .ic-rounded {
   background-color: aquamarine;
@@ -66,4 +65,8 @@ p {
   background-color: #d6c08d;
   position: absolute;
   top: 58%;
+}
+
+.hidden {
+  display: none;
 }

@@ -2,6 +2,11 @@
   /* body {
     background-color: greenyellow;
   } */
+
+  /* BANNER */
+  .dev-name {
+    font-size: small;
+  }
   /* NAVBAR */
   .nav-bar .container-fluid {
     display: block !important;
@@ -15,6 +20,7 @@
   .avatar-button {
     display: none;
   }
+
   /* ABOUT */
   .about::before {
     display: none;
@@ -26,12 +32,14 @@
   .about .personal-info {
     width: 100%;
   }
+
   /* JOB INFO */
   .job-info .container .row {
     display: grid;
     grid-template-columns: auto;
     row-gap: 25px;
   }
+
   /* CERTIFICATION */
   .certificate .container .row {
     display: grid;
@@ -47,10 +55,12 @@
     border-right: none;
     border-bottom: 1px solid #d6c08d !important;
   }
+
   /* PROJECT */
   .project .row {
     display: block;
   }
+
   /* Utilities */
   /* width custom */
   .w-custom-100 {

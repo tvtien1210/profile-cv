@@ -1,6 +1,12 @@
 @media (max-width: 768px) {
+  /* body {
+    background-color: lightblue;
+  } */
 
-
+  /* BANNER */
+  .dev-name {
+    font-size: x-large;
+  }
   /* NAVBAR */
 
   .avatar-button {
@@ -24,11 +30,13 @@
   .about .personal-info {
     width: 100%;
   }
+
   /* INFO */
   .job-info .container .row {
     display: grid;
     grid-template-columns: auto auto;
   }
+
   /* CERTIFICATION */
   .certificate .container .row {
     display: grid;
@@ -41,17 +49,28 @@
   .cer-border-x {
     top: 60%;
   }
-  /* PROJECT */
 
+  /* PROJECT */
   .project .row {
-    display: block;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
   }
+  .prj-title,
+  .prj-details,
+  .prj-details-more {
+    font-size: small;
+  }
+  .prj-details,
+  .prj-details-more {
+    display: block !important;
+  }
+
   /* Utilities */
   /* width custom */
   .w-custom-100 {
-    width: auto;
+    width: 100%;
   }
   .h-custom-100 {
-    height: auto;
+    height: 100%;
   }
 }
