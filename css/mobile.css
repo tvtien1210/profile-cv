@@ -41,6 +41,7 @@
   }
 
   /* CERTIFICATION */
+
   .certificate .container .row {
     display: grid;
     grid-template-columns: auto;
