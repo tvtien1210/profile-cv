@@ -7,6 +7,9 @@
   .dev-name {
     font-size: small;
   }
+    .btn-language {
+    font-size: small;
+  }
   /* NAVBAR */
   .nav-bar .container-fluid {
     display: block !important;
