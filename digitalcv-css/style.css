@@ -1,0 +1,21 @@
+.timeline {
+  margin-top: 8px;
+}
+
+@media (max-width: 576px) {
+  .team {
+    margin-top: 8px;
+  }
+  .primary {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    margin-top: 8px;
+  }
+  .primary {
+    margin-top: 8px;
+  }
+}
